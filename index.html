@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Meet Gloire Nsengiyunva, an Erie High School student in the Class of 2027 with roots in Congo and Uganda, a love for football and a creative eye for music and short-form video." />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Gloire Nsengiyunva" />
+    <meta property="og:description" content="From Congo to Uganda to Erie · Class of 2027 · Football, music and creativity" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:," />
+    <title>Gloire Nsengiyunva — Erie High School, Class of 2027</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gloire Nsengiyunva",
+        "description": "Erie High School student in the Class of 2027 with roots in Congo and Uganda and interests in sports, music and digital creativity.",
+        "affiliation": {
+          "@type": "EducationalOrganization",
+          "name": "Erie High School"
+        },
+        "knowsAbout": [
+          "Football",
+          "Basketball",
+          "R&B music",
+          "Short-form video",
+          "Digital creativity"
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f4f2ed;
+        --ink: #161616;
+        --muted: #5f5c57;
+        --panel: #fffdfa;
+        --line: #cfc9bf;
+        --red: #ce171f;
+        --deep-red: #95131a;
+        --pitch: #143d2d;
+        --pitch-line: rgba(255,255,255,.72);
+        --shadow: rgba(26, 20, 16, .12);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #111211;
+          --ink: #f7f3eb;
+          --muted: #bbb7af;
+          --panel: #1c1d1b;
+          --line: #3a3b37;
+          --red: #ff3a43;
+          --deep-red: #b41922;
+          --pitch: #0d2e21;
+          --pitch-line: rgba(255,255,255,.56);
+          --shadow: rgba(0, 0, 0, .35);
+        }
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "IBM Plex Sans", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: clamp(30px, 7vw, 86px) 0 40px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr);
+        gap: clamp(28px, 6vw, 88px);
+        align-items: end;
+        min-height: min(720px, calc(100vh - 80px));
+        border-bottom: 1px solid var(--line);
+        padding-bottom: clamp(48px, 7vw, 86px);
+      }
+
+      .intro { max-width: 760px; }
+
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 28px;
+        color: var(--muted);
+        font-size: .88rem;
+        font-weight: 600;
+        letter-spacing: .055em;
+        text-transform: uppercase;
+      }
+
+      .status::before {
+        content: "";
+        width: 28px;
+        height: 3px;
+        background: var(--red);
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 9ch;
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(3.35rem, 9.4vw, 8.7rem);
+        line-height: .86;
+        letter-spacing: -.065em;
+        text-wrap: balance;
+      }
+
+      .lead {
+        max-width: 590px;
+        margin: clamp(28px, 4vw, 48px) 0 0;
+        font-size: clamp(1.14rem, 2vw, 1.55rem);
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .lead strong { color: var(--ink); font-weight: 600; }
+
+      .identity-card {
+        position: relative;
+        min-height: 435px;
+        overflow: hidden;
+        background: var(--pitch);
+        color: #fff;
+        box-shadow: 18px 18px 0 var(--shadow);
+        isolation: isolate;
+      }
+
+      .identity-card::before {
+        content: "";
+        position: absolute;
+        inset: 28px;
+        border: 2px solid var(--pitch-line);
+        z-index: -1;
+      }
+
+      .identity-card::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 28px;
+        bottom: 28px;
+        width: 2px;
+        background: var(--pitch-line);
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+
+      .center-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 116px;
+        aspect-ratio: 1;
+        border: 2px solid var(--pitch-line);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+
+      .route {
+        position: absolute;
+        top: 58px;
+        left: 50%;
+        display: grid;
+        grid-template-columns: auto 42px auto 42px auto;
+        align-items: center;
+        width: max-content;
+        max-width: calc(100% - 48px);
+        transform: translateX(-50%);
+        font-size: .72rem;
+        font-weight: 600;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+      }
+
+      .route i {
+        position: relative;
+        display: block;
+        height: 1px;
+        background: rgba(255,255,255,.58);
+      }
+
+      .route i::after {
+        content: "";
+        position: absolute;
+        right: -1px;
+        top: 50%;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      .route span { padding: 0 8px; }
+
+      .card-copy {
+        position: absolute;
+        inset: auto 0 0 0;
+        padding: 100px 34px 34px;
+        background: linear-gradient(to top, rgba(5,15,11,.97) 0%, rgba(5,15,11,.72) 55%, transparent 100%);
+      }
+
+      .card-number {
+        display: block;
+        margin-bottom: 8px;
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(3.8rem, 7vw, 6.4rem);
+        line-height: 1;
+        letter-spacing: -.04em;
+      }
+
+      .card-label {
+        margin: 0;
+        font-size: .9rem;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+      }
+
+      .profile-grid {
+        display: grid;
+        grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+        gap: clamp(46px, 8vw, 120px);
+        padding: clamp(64px, 10vw, 130px) 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0;
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(2rem, 4.6vw, 4.2rem);
+        line-height: .98;
+        letter-spacing: -.04em;
+      }
+
+      .section-index {
+        display: inline-block;
+        margin-bottom: 18px;
+        color: var(--red);
+        font-weight: 600;
+      }
+
+      .bio {
+        margin: 0;
+        max-width: 660px;
+        font-size: clamp(1.18rem, 2.2vw, 1.7rem);
+        line-height: 1.55;
+      }
+
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        margin-top: 46px;
+        background: var(--line);
+        border: 1px solid var(--line);
+      }
+
+      .fact {
+        min-height: 152px;
+        padding: 24px;
+        background: var(--panel);
+      }
+
+      .fact span {
+        display: block;
+        margin-bottom: 22px;
+        color: var(--muted);
+        font-size: .78rem;
+        font-weight: 600;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+      }
+
+      .fact strong {
+        display: block;
+        font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+        line-height: 1.25;
+      }
+
+      .supporter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: var(--red);
+        color: #fff;
+      }
+
+      .supporter-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 410px;
+        padding: clamp(34px, 6vw, 72px);
+      }
+
+      .supporter h2 { max-width: 8ch; }
+
+      .supporter p {
+        max-width: 410px;
+        margin: 42px 0 0;
+        font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+        line-height: 1.5;
+      }
+
+      .stripe-field {
+        position: relative;
+        min-height: 410px;
+        overflow: hidden;
+        background:
+          repeating-linear-gradient(90deg, rgba(255,255,255,.08) 0 14%, transparent 14% 28%),
+          var(--deep-red);
+      }
+
+      .stripe-field::before,
+      .stripe-field::after {
+        content: "";
+        position: absolute;
+        border: 2px solid rgba(255,255,255,.72);
+        border-radius: 50%;
+      }
+
+      .stripe-field::before {
+        width: 220px;
+        aspect-ratio: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .stripe-field::after {
+        width: 16px;
+        aspect-ratio: 1;
+        top: 50%;
+        left: 50%;
+        background: #fff;
+        transform: translate(-50%, -50%);
+      }
+
+      .wordmark {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(4.5rem, 10vw, 9.5rem);
+        line-height: .8;
+        letter-spacing: -.08em;
+        color: rgba(255,255,255,.12);
+        transform: translate(-50%, -50%) rotate(-9deg);
+        white-space: nowrap;
+      }
+
+      .league-strip {
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+        max-width: calc(100% - 48px);
+      }
+
+      .league-strip span {
+        padding: 7px 9px;
+        border: 1px solid rgba(255,255,255,.52);
+        background: rgba(91, 8, 14, .58);
+        color: #fff;
+        font-size: .67rem;
+        font-weight: 600;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+
+      .details-section {
+        display: grid;
+        grid-template-columns: minmax(230px, .72fr) minmax(0, 1.28fr);
+        gap: clamp(46px, 8vw, 120px);
+        padding: clamp(64px, 10vw, 130px) 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .details-intro p {
+        max-width: 360px;
+        margin: 26px 0 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.65;
+      }
+
+      .interest-list {
+        border-top: 1px solid var(--line);
+      }
+
+      .interest-row {
+        display: grid;
+        grid-template-columns: 128px minmax(0, 1fr);
+        gap: clamp(20px, 4vw, 50px);
+        padding: 28px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .interest-label {
+        color: var(--red);
+        font-size: .78rem;
+        font-weight: 600;
+        letter-spacing: .09em;
+        text-transform: uppercase;
+      }
+
+      .interest-row h3 {
+        margin: 0 0 9px;
+        font-size: clamp(1.25rem, 2vw, 1.65rem);
+        line-height: 1.2;
+      }
+
+      .interest-row p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .mindset {
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(260px, .7fr);
+        gap: clamp(36px, 7vw, 92px);
+        align-items: end;
+        padding: clamp(64px, 9vw, 112px) 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .mindset blockquote {
+        margin: 22px 0 0;
+        max-width: 780px;
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(2rem, 4.7vw, 4.4rem);
+        line-height: 1.04;
+        letter-spacing: -.045em;
+      }
+
+      .mindset-copy {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.65;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 28px 0 0;
+        color: var(--muted);
+        font-size: .88rem;
+      }
+
+      footer strong { color: var(--ink); }
+
+      @media (max-width: 800px) {
+        main {
+          width: min(100% - 28px, 650px);
+          padding-top: 34px;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+          min-height: auto;
+        }
+
+        h1 { max-width: 8.6ch; }
+
+        .identity-card { min-height: 330px; }
+
+        .profile-grid {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+
+        .facts { grid-template-columns: 1fr; }
+        .fact { min-height: auto; }
+
+        .supporter { grid-template-columns: 1fr; }
+        .supporter-copy, .stripe-field { min-height: 320px; }
+
+        .details-section,
+        .mindset {
+          grid-template-columns: 1fr;
+          gap: 34px;
+        }
+
+        .details-intro p { max-width: 560px; }
+      }
+
+      @media (max-width: 440px) {
+        h1 { font-size: clamp(3rem, 17vw, 4.7rem); }
+        .status { margin-bottom: 22px; }
+        .identity-card::before { inset: 20px; }
+        .identity-card::after { top: 20px; bottom: 20px; }
+        .card-copy { padding: 92px 25px 25px; }
+        .supporter-copy { padding: 32px 26px; }
+        .interest-row { grid-template-columns: 1fr; gap: 10px; }
+        footer { flex-direction: column; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="status">Congo · Uganda · Erie</p>
+          <h1 id="page-title">Gloire Nsengiyunva</h1>
+          <p class="lead">
+            Born in Congo, raised in Uganda and now building my future in Erie. I’m a <strong>Class of 2027</strong> student with a love for football, music and making ideas feel like my own.
+          </p>
+        </div>
+
+        <div class="identity-card" aria-label="A journey from Congo through Uganda to Erie, leading toward graduation in 2027">
+          <span class="center-circle" aria-hidden="true"></span>
+          <div class="route" aria-hidden="true">
+            <span>Congo</span><i></i><span>Uganda</span><i></i><span>Erie</span>
+          </div>
+          <div class="card-copy">
+            <strong class="card-number">2027</strong>
+            <p class="card-label">Erie High · Next chapter</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-grid" aria-labelledby="about-heading">
+        <div>
+          <span class="section-index">01 / About</span>
+          <h2 id="about-heading">Three places. One story.</h2>
+        </div>
+        <div>
+          <p class="bio">
+            Moving across countries taught me how to adapt without losing where I came from. I’m competitive, curious and direct—I like knowing the details, finding what works and putting my own style on the next move.
+          </p>
+          <div class="facts" aria-label="Profile highlights">
+            <div class="fact">
+              <span>Born</span>
+              <strong>Congo</strong>
+            </div>
+            <div class="fact">
+              <span>Raised</span>
+              <strong>Uganda</strong>
+            </div>
+            <div class="fact">
+              <span>Now</span>
+              <strong>Erie, Pennsylvania</strong>
+            </div>
+            <div class="fact">
+              <span>School</span>
+              <strong>Erie High School</strong>
+            </div>
+            <div class="fact">
+              <span>Graduating</span>
+              <strong>Class of 2027</strong>
+            </div>
+            <div class="fact">
+              <span>Favorite club</span>
+              <strong>Manchester United</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="supporter" aria-labelledby="supporter-heading">
+        <div class="supporter-copy">
+          <span class="section-index" style="color:#fff">02 / Football</span>
+          <div>
+            <h2 id="supporter-heading">United, always.</h2>
+            <p>Manchester United comes first, but the big crowds, rivalries, tactics and stories are what make the whole world of sport worth following.</p>
+          </div>
+        </div>
+        <div class="stripe-field" aria-hidden="true">
+          <p class="wordmark">UNITED</p>
+          <div class="league-strip">
+            <span>Premier League</span>
+            <span>LaLiga</span>
+            <span>Serie A</span>
+            <span>Bundesliga</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="details-section" aria-labelledby="interests-heading">
+        <div class="details-intro">
+          <span class="section-index">03 / The mix</span>
+          <h2 id="interests-heading">More than matchday.</h2>
+          <p>Football is a big part of the story, not the whole story. Music, culture, style and creativity matter too.</p>
+        </div>
+
+        <div class="interest-list">
+          <article class="interest-row">
+            <span class="interest-label">The leagues</span>
+            <div>
+              <h3>Football from every angle</h3>
+              <p>I follow the Premier League, Serie A, LaLiga and the Bundesliga—plus the big players, tactics, rivalries and stories around the game.</p>
+            </div>
+          </article>
+          <article class="interest-row">
+            <span class="interest-label">Roots</span>
+            <div>
+              <h3>A wider view of the world</h3>
+              <p>Congo, Uganda and the United States have all shaped my story. I speak Swahili and carry every part of that journey with me.</p>
+            </div>
+          </article>
+          <article class="interest-row">
+            <span class="interest-label">On repeat</span>
+            <div>
+              <h3>R&amp;B, soul and a song for the day</h3>
+              <p>Daniel Caesar and Brent Faiyaz stay in rotation. I like finding the right track for the mood and giving it a clean visual.</p>
+            </div>
+          </article>
+          <article class="interest-row">
+            <span class="interest-label">Create + watch</span>
+            <div>
+              <h3>Short videos with personality</h3>
+              <p>I’m into TikTok ideas, funny captions, wallpaper edits and simple graphics. When I’m just watching, scary YouTube and analog horror hit different.</p>
+            </div>
+          </article>
+          <article class="interest-row">
+            <span class="interest-label">Personal style</span>
+            <div>
+              <h3>Clean looks, smart choices</h3>
+              <p>I like sharp haircuts and good shoes without paying just for hype. The best pick is the one that looks right and makes sense.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mindset" aria-labelledby="mindset-heading">
+        <div>
+          <span class="section-index">04 / Mindset</span>
+          <h2 id="mindset-heading">What drives me</h2>
+          <blockquote>Keep it real. Keep learning. Make the next move count.</blockquote>
+        </div>
+        <p class="mindset-copy">I like direct answers, strong opinions and knowing the details before I decide. Right now, the focus is graduating, earning my learner’s permit and continuing to build my own style—online and off.</p>
+      </section>
+
+      <footer>
+        <strong>Gloire Nsengiyunva</strong>
+        <span>Erie High School · Class of 2027</span>
+      </footer>
+    </main>
+  </body>
+</html>
